@@ -1,15 +1,21 @@
 pipeline {
-agent any
-      steps {
-         step("Build"){
-              echo "This is the build statge"
+    agent any
+      stages {
+         stage("Build"){
+               steps{
+              echo "This is the build stage"
+              }
          }
-          step("Test"){
-              echo "This is the Testing statge"
+          stage("Test"){
+             steps{
+              echo "This is the Testing stage"
+              }
          }
-         step("Deploy"){
-              echo "This is the Deployment statge"
-         }
-       }
+         stge("Deploy"){
+             steps{
+              echo "This is the Deployment stage"
+              }
+           }
+        }
      }
     
