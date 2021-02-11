@@ -1,0 +1,15 @@
+pipeline {
+agent any
+      steps {
+         step("Build"){
+              echo "This is the build statge"
+         }
+          step("Test"){
+              echo "This is the Testing statge"
+         }
+         step("Deploy"){
+              echo "This is the Deployment statge"
+         }
+       }
+     }
+    
